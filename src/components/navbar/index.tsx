@@ -61,11 +61,7 @@ const Navbar = (props: {
           <p className="pl-3 pr-2 text-xl">
             <FiSearch className="h-4 w-4 text-gray-400 dark:text-white" />
           </p>
-          <input
-            type="text"
-            placeholder="Search..."
-            className="block h-full w-full rounded-full bg-lightPrimary text-sm font-medium text-navy-700 outline-none placeholder:!text-gray-400 dark:bg-navy-900 dark:text-white dark:placeholder:!text-white sm:w-fit"
-          />
+          
         </div>
         <span
           className="flex cursor-pointer text-xl text-gray-600 dark:text-white xl:hidden"
@@ -94,6 +90,7 @@ const Navbar = (props: {
             </div>
 
             <button className="flex w-full items-center">
+              {/*
               <div className="flex h-full w-[85px] items-center justify-center rounded-xl bg-gradient-to-b from-brandLinear to-brand-500 py-4 text-2xl text-white">
                 <BsArrowBarUp />
               </div>
@@ -104,7 +101,7 @@ const Navbar = (props: {
                 <p className="font-base text-left text-xs text-gray-900 dark:text-white">
                   A new update for your downloaded item is available!
                 </p>
-              </div>
+              </div> 
             </button>
 
             <button className="flex w-full items-center">
@@ -118,7 +115,7 @@ const Navbar = (props: {
                 <p className="font-base text-left text-xs text-gray-900 dark:text-white">
                   A new update for your downloaded item is available!
                 </p>
-              </div>
+              </div> */}
             </button>
           </div>
         </Dropdown>
@@ -133,35 +130,7 @@ const Navbar = (props: {
           animation="origin-[75%_0%] md:origin-top-right transition-all duration-300 ease-in-out"
         >
           <div className="flex w-[350px] flex-col gap-2 rounded-[20px] bg-white p-4 shadow-xl shadow-shadow-500 dark:!bg-navy-700 dark:text-white dark:shadow-none">
-            <div
-              style={{
-                backgroundImage: `url(${navbarimage.src})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
-              }}
-              className="mb-2 aspect-video w-full rounded-lg"
-            />
-            <a
-              target="blank"
-              href="https://horizon-ui.com/pro?ref=live-free-tailwind-react"
-              className="px-full linear flex cursor-pointer items-center justify-center rounded-xl bg-brand-500 py-[11px] font-bold text-white transition duration-200 hover:bg-brand-600 hover:text-white active:bg-brand-700 dark:bg-brand-400 dark:hover:bg-brand-300 dark:active:bg-brand-200"
-            >
-              Buy Horizon UI PRO
-            </a>
-            <a
-              target="blank"
-              href="https://horizon-ui.com/docs-tailwind/docs/react/installation?ref=live-free-tailwind-react"
-              className="px-full linear flex cursor-pointer items-center justify-center rounded-xl border py-[11px] font-bold text-navy-700 transition duration-200 hover:bg-gray-200 hover:text-navy-700 dark:!border-white/10 dark:text-white dark:hover:bg-white/20 dark:hover:text-white dark:active:bg-white/10"
-            >
-              See Documentation
-            </a>
-            <a
-              target="blank"
-              href="https://horizon-ui.com/?ref=live-free-tailwind-react"
-              className="hover:bg-black px-full linear flex cursor-pointer items-center justify-center rounded-xl py-[11px] font-bold text-navy-700 transition duration-200 hover:text-navy-700 dark:text-white dark:hover:text-white"
-            >
-              Client Name
-            </a>
+
           </div>
         </Dropdown>
         <div
