@@ -22,10 +22,10 @@ type RowObj = {
 
 
 function CheckTable(props: { tableData: any, 
-  tableName: string
+  tableName?: string
 }) {
   const { tableData } = props;
-  const { tableName } = props;
+  const { tableName} = props;
   const [sorting, setSorting] = React.useState<SortingState>([]);
   let defaultData = tableData;
   const columns = [
